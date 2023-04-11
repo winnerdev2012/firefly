@@ -114,8 +114,10 @@ type Plugin interface {
 
 	// GenerateFFI returns an FFI from a blockchain specific interface format e.g. an Ethereum ABI
 	GenerateFFI(ctx context.Context, generationRequest *fftypes.FFIGenerationRequest) (*fftypes.FFI, error)
+	// GenerateFFI(ctx context.Context, generationRequest *fftypes.FFIGenerationRequest) (*fftypes.FFI, error)
 
 	// NormalizeContractLocation validates and normalizes the formatting of the location JSON
+	// NormalizeContractLocation(ctx context.Context, ntype NormalizeType, location *fftypes.JSONAny) (*fftypes.JSONAny, error)
 	NormalizeContractLocation(ctx context.Context, ntype NormalizeType, location *fftypes.JSONAny) (*fftypes.JSONAny, error)
 
 	// GenerateEventSignature generates a strigified signature for the event, incorporating any fields significant to identifying the event as unique
