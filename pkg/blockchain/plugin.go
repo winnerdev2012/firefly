@@ -141,6 +141,7 @@ type Plugin interface {
 
 	// Get the latest status of the given transaction
 	GetTransactionStatus(ctx context.Context, operation *core.Operation) (interface{}, error)
+	// GetTransactionStatus(ctx context.Context, operation *core.Operation) (interface{}, error)
 }
 
 type NormalizeType int
