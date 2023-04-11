@@ -52,6 +52,9 @@ func (bs *BatchState) AddPreFinalize(action func(ctx context.Context) error) {
 	bs.PreFinalize = append(bs.PreFinalize, action)
 }
 
+// func (bs *BatchState) AddFinalize(action func(ctx context.Context) error) {
+// 	bs.Finalize = append(bs.Finalize, action)
+// }
 func (bs *BatchState) AddFinalize(action func(ctx context.Context) error) {
 	bs.Finalize = append(bs.Finalize, action)
 }
