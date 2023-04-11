@@ -36,6 +36,7 @@ type BatchState struct {
 	// - Will execute after all batch messages have been processed and any PreFinalize callbacks have succeeded
 	// - Will execute inside database RunAsGroup
 	// - If any Finalize callback errors out, batch will be aborted and retried (small chance of duplicate execution here)
+	// - If any Finalize callback errors out, batch will be aborted and retried (small chance of duplicate execution here)
 	Finalize []func(ctx context.Context) error
 
 	// PendingConfirms are messages that are pending confirmation after already being processed in this batch
