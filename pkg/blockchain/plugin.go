@@ -62,6 +62,7 @@ type Plugin interface {
 
 	// VerifierType returns the verifier (key) type that is used by this blockchain
 	VerifierType() core.VerifierType
+	// VerifierType() core.VerifierType
 
 	// ResolveSigningKey allows blockchain specific processing of keys supplied by users
 	// of this FireFly core API before a transaction is accepted using that signing key.
