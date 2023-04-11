@@ -30,3 +30,4 @@ sharedstorage:
 tokens:
   - name: erc1155
     connector: https
+    # connector: https
