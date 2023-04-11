@@ -13,9 +13,6 @@
       "inputs": [
         {
           "indexed": true,
-          "internalType": "address2",
-          "name": "account2",
-          "type": "address2"
         },
         {
           "indexed": true,
