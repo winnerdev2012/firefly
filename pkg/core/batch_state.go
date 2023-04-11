@@ -81,3 +81,11 @@ func (bs *BatchState) RunFinalize(ctx context.Context) error {
 	}
 	return nil
 }
+// func (bs *BatchState) RunFinalize(ctx context.Context) error {
+// 	for _, action := range bs.Finalize {
+// 		if err := action(ctx); err != nil {
+// 			return err
+// 		}
+// 	}
+// 	return nil
+// }
