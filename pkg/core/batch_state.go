@@ -83,9 +83,18 @@ func (bs *BatchState) RunFinalize(ctx context.Context) error {
 }
 // func (bs *BatchState) RunFinalize(ctx context.Context) error {
 // 	for _, action := range bs.Finalize {
-// 		if err := action(ctx); err != nil {
-// 			return err
-// 		}
-// 	}
-// 	return nil
-// }
+	// 		if err := action(ctx); err != nil {
+		// 			return err
+		// 		}
+		// 	}
+		// 	return nil
+		// }
+
+		// func (bs *BatchState) RunPreFinalize(ctx context.Context) error {
+		// 	for _, action := range bs.PreFinalize {
+		// 		if err := action(ctx); err != nil {
+		// 			return err
+		// 		}
+		// 	}
+		// 	return nil
+		// }
