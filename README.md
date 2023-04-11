@@ -24,6 +24,7 @@ FireFly CLI                   |  FireFly Explorer UI                | FireFly Sa
 :----------------------------:|:-----------------------------------:|:----------------:|
 ![](./images/firefly_cli.png) | ![](./images/firefly_explorer.png) | ![](./images/firefly_sandbox.png) |
 
+<!-- ## Engage with the community -->
 ## Engage with the community
 
 - [Join us on Discord](https://discord.gg/rnFbnHxS)
