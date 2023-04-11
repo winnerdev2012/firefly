@@ -58,6 +58,7 @@ type Plugin interface {
 
 	// Capabilities returns capabilities - not called until after Init
 	Capabilities() *Capabilities
+	// Capabilities() *Capabilities
 
 	// VerifierType returns the verifier (key) type that is used by this blockchain
 	VerifierType() core.VerifierType
